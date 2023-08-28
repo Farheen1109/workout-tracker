@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register & Login</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container" id="registerForm">
+      <h2>Register</h2>
+      <input type="text" id="registerUsername" placeholder="Username">
+      <input type="password" id="registerPassword" placeholder="Password">
+      <button onclick="register()">Register</button>
+    </div>
+    <div class="form-container" id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <a href="index.html"><button>Login</button> </a>
+    </div>
+    <div id="message" class="hidden"></div>
+  </div>
+  <script src="task.js"></script>
+</body>
+
+</html>

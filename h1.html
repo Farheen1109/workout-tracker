@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="c1.css" />
+    <title>Media Query</title>
+    <style>
+      /* Global Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Navigation Bar Styles */
+      .navbar {
+        background-color: #333;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      
+      .navbar .logo {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 60px;
+        margin: 0;
+      }
+      
+      .navbar img {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      
+      .navbar .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbar .menu li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      
+      .navbar .menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        align-items: center;
+      }
+      .navbar .menu a:hover{
+        background: #f00;
+      }
+      .fi{
+        font-size: 30px;
+        font-family: arial;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">
+        <span>work</span>out
+      </h1>
+      <ul class="menu">
+        <li><a href="#week1">DAY(1-5)</a></li>
+        <li><a href="#week2">DAY(5-10)</a></li>
+        <li><a href="#week3">DAY(10-15)</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <h1>Welcome to 2 week workout session</h1>
+    <section id="week1">
+      <h1 class="heading"> <span>DAY (1-5)</span> </h1>
+        <p>HERE are some tasks which you need to follow</p>
+        <div>
+        <h2><b>CARDIO EXERCISE</b></h2>
+        <ul>
+            <li>Froggy jumps</li>
+            <li>Burpees</li>
+            <li>Side to Side Jumping Lunges</li>
+        </ul>
+        </div>
+        <h1>References</h1>
+        <div class="boxes">
+          <div class="images">
+            <div class="image">
+              <img src="images/car1.png" />
+              <div class="image-title">Froggy jump</div>
+            </div>
+            <div class="image">
+              <video autoplay loop muted plays-inline>
+                <source src="car1.mp4" type="video/mp4">
+              </video>
+              <div class="image-title">Burpees</div>
+            </div>
+            <div class="image">
+              <video autoplay loop muted plays-inline>
+                <source src="car2.mp4" type="video/mp4">
+              </video>
+              <div class="image-title">Side to Side Jumping Lunges</div>
+            </div>
+          </div>
+        </div>
+        <h2><b>Weight lifting</b></h2>
+        <ul>
+            <li>pull-up</li>
+            <li>Dead-lift</li>
+            <li>Bent over row</li>
+        </ul>
+        <h1>References</h1>
+        <div class="boxes">
+          <div class="images">
+            <div class="image">
+              <video autoplay loop muted plays-inline>
+                <source src="pull.mp4" type="video/mp4">
+              </video>
+              <div class="image-title">pull-up</div>
+            </div>
+            <div class="image">
+              <video autoplay loop muted plays-inline>
+                <source src="pull1.mp4" type="video/mp4">
+              </video>
+              <div class="image-title">Dead-lift</div>
+            </div>
+            <div class="image">
+              <video autoplay loop muted plays-inline>
+                <source src="pull2.mp4" type="video/mp4">
+              </video>
+              <div class="image-title">Bent over row</div>
+            </div>
+          </div>
+        </div>
+        <h2><b>Diet planning</b></h2>
+        <ul>
+            <li>LUNCH</li>
+            <li>BREAK-FAST</li>
+            <li>PRE WORKOUT SNACKS</li>
+            <li>DINNER</li>
+        </ul>
+        <h1>References</h1>
+        <div class="boxes" >
+          <div class="images">
+            <div class="image">
+              <p style="font-size:30px; font-family:red serif">Oats Banana Pancakes with Protein Shake</p>
+              <div class="image-title" style="padding:1px;">Breakfast</div>
+            </div>
+            <div class="image">
+              <p style="font-size:30px; font-family:red serif ">Multigrain roti along with palak chicken and Avocado bell pepper salad </p>
+              <div class="image-title" style="padding:1px;">Lunch</div>
+            </div>
+            <div class="image">
+              <p style="font-size:30px; font-family:red serif">Brown rice, peas paneer curry, sprouts vegetable salad</p>
+              <div class="image-title" style="padding:1px;">Dinner</div>
+            </div>
+          </div>
+        </div>
+        <h1>References</h1>
+        <div class="container">
+          <h1>Task Tracker</h1>
+          <input type="file" id="fileInput">
+          <div class="task-list">
+            <label><input type="checkbox" id="task1">Task 1</label>
+            <label><input type="checkbox" id="task2">Task 2</label>
+            <label><input type="checkbox" id="task3">Task 3</label>
+            <!-- Add more tasks as needed -->
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progress"></div>
+          </div>
+          <div class="video-container" id="videoContainer"></div>
+        </div>
+        </section>
+          <section id="week2">
+            <h1 class="heading"> <span>DAY (5-10)</span> </h1>
+            <p>HERE are some tasks which you need to follow</p>
+            <div>
+            <h2><b>CARDIO EXERCISE</b></h2>
+            <ul>
+                <li>squat jumps</li>
+                <li>rope jump</li>
+                <li>plyo Lunges</li>
+            </ul>
+            </div>
+            <h1>References</h1>
+            <div class="boxes">
+              <div class="images">
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="images/squat.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">squat jump</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="images/rope.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">rope jump</div>
+                </div>
+                <div class="image">
+                  <img src="images/lunge.jpeg" />
+                  <div class="image-title">plyo Lunges</div>
+                </div>
+              </div>
+            </div>
+            <h2><b>Weight lifting</b></h2>
+            <ul>
+                <li>pull-up</li>
+                <li>Dead-lift</li>
+                <li>Bent over row</li>
+            </ul>
+            <h1>References</h1>
+            <div class="boxes">
+              <div class="images">
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">pull-up</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull1.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Dead-lift</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull2.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Bent over row</div>
+                </div>
+              </div>
+            </div>
+            <h2><b>Diet planning</b></h2>
+            <ul>
+                <li>LUNCH</li>
+                <li>BREAK-FAST</li>
+                <li>PRE WORKOUT SNACKS</li>
+                <li>DINNER</li>
+            </ul>
+            <h1>References</h1>
+            <div class="boxes" >
+              <div class="images">
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif">Oats Banana Pancakes with Protein Shake</p>
+                  <div class="image-title" style="padding:1px;">Breakfast</div>
+                </div>
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif ">Multigrain roti along with palak chicken and Avocado bell pepper salad </p>
+                  <div class="image-title" style="padding:1px;">Lunch</div>
+                </div>
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif">Brown rice, peas paneer curry, sprouts vegetable salad</p>
+                  <div class="image-title" style="padding:1px;">Dinner</div>
+                </div>
+              </div>
+            </div>
+            <h1>References</h1>
+            <div class="boxes" >
+              <div class="images">
+                <div class="image">
+                  <input type="file" class="custom-file-input" id="file" name="file">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="week3">
+            <h1 class="heading"> <span>DAY (10-15)</span> </h1>
+            <p>HERE are some tasks which you need to follow</p>
+            <div>
+            <h2><b>CARDIO EXERCISE</b></h2>
+            <ul>
+                <li>Froggy jumps</li>
+                <li>Burpees</li>
+                <li>Side to Side Jumping Lunges</li>
+            </ul>
+            </div>
+            <h1>References</h1>
+            <div class="boxes">
+              <div class="images">
+                <div class="image">
+                  <img src="images/car1.png" />
+                  <div class="image-title">Froggy jump</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="car1.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Burpees</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="car2.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Side to Side Jumping Lunges</div>
+                </div>
+              </div>
+            </div>
+            <h2><b>Weight lifting</b></h2>
+            <ul>
+                <li>pull-up</li>
+                <li>Dead-lift</li>
+                <li>Bent over row</li>
+            </ul>
+            <h1>References</h1>
+            <div class="boxes">
+              <div class="images">
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">pull-up</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull1.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Dead-lift</div>
+                </div>
+                <div class="image">
+                  <video autoplay loop muted plays-inline>
+                    <source src="pull2.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-title">Bent over row</div>
+                </div>
+              </div>
+            </div>
+            <h2><b>Diet planning</b></h2>
+            <ul>
+                <li>LUNCH</li>
+                <li>BREAK-FAST</li>
+                <li>PRE WORKOUT SNACKS</li>
+                <li>DINNER</li>
+            </ul>
+            <h1>References</h1>
+            <div class="boxes" >
+              <div class="images">
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif">Oats Banana Pancakes with Protein Shake</p>
+                  <div class="image-title" style="padding:1px;">Breakfast</div>
+                </div>
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif ">Multigrain roti along with palak chicken and Avocado bell pepper salad </p>
+                  <div class="image-title" style="padding:1px;">Lunch</div>
+                </div>
+                <div class="image">
+                  <p style="font-size:30px; font-family:red serif">Brown rice, peas paneer curry, sprouts vegetable salad</p>
+                  <div class="image-title" style="padding:1px;">Dinner</div>
+                </div>
+              </div>
+            </div>
+            <h1>References</h1>
+            <div class="boxes" >
+              <div class="images">
+                <div class="image">
+                  <input type="file" class="custom-file-input" id="file" name="file">
+                </div>
+              </div>
+            </div>
+            </section>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const progressBar = document.getElementById('progress');
+      const fileInput = document.getElementById('fileInput');
+      const videoContainer = document.getElementById('videoContainer');
+    
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', updateProgress);
+      });
+    
+      fileInput.addEventListener('change', handleFileUpload);
+    
+      function updateProgress() {
+        const totalTasks = checkboxes.length;
+        const completedTasks = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        const progressPercentage = (completedTasks / totalTasks) * 100;
+        progressBar.style.width = `${progressPercentage}%`;
+      }
+    
+      function handleFileUpload() {
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = true;
+        });
+        updateProgress();
+    
+        const file = fileInput.files[0];
+        if (file && file.type.startsWith('video/')) {
+          const videoURL = URL.createObjectURL(file);
+          const videoElement = document.createElement('video');
+          videoElement.setAttribute('src', videoURL);
+          videoElement.setAttribute('controls', 'controls');
+          videoElement.setAttribute('width', '100%');
+          videoElement.setAttribute('height', 'auto');
+          videoContainer.innerHTML = ''; // Clear previous content, if any.
+          videoContainer.appendChild(videoElement);
+          videoContainer.style.display = 'block'; // Display the video container
+        } else {
+          videoContainer.innerHTML = ''; // Clear video container if the uploaded file is not a video.
+          videoContainer.style.display = 'none'; // Hide the video container
+        }
+      }
+    });
+    
+  </script>
+</html>

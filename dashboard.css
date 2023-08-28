@@ -1,0 +1,54 @@
+/* dashboard.css */
+
+/* Apply general styles to the dashboard page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Style the user logins list */
+  #loginList {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style each individual login entry in the list */
+  .login-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .login-entry:last-child {
+    border-bottom: none;
+  }
+  
+  .login-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-details p {
+    margin-left: 10px;
+  }
+  
+  /* Add more styles as needed to customize your dashboard page */
+  
